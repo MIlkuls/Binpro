@@ -1,0 +1,13 @@
+footer{
+    background-color:#070707;
+    padding: 5%;
+}
+.footer_nav li{
+    transition: 0.6s ease-in-out;
+}
+.footer_nav li:hover{
+    color: #EA4C14;
+}
+footer nav {
+    padding-top: 3%;
+}

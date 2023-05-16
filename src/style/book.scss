@@ -1,0 +1,33 @@
+.book{
+
+     h3{
+      font-size: 100%;
+      cursor: pointer;
+     }
+     
+   
+    p{
+        display: flex;
+        font-size: 80%;
+       }
+
+    h2{
+       font-size:140%;
+       padding-bottom: 5%;
+       cursor: pointer;
+    img{
+        width: 20px;
+        height:30px;
+        visibility: hidden;
+        position: absolute;
+    }
+  }
+  
+  .book_title{
+    min-width: 50%;
+  }
+  
+}
+
+
+

@@ -1,0 +1,152 @@
+@import url("https://unpkg.com/swiper/swiper-bundle.min.css");
+
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+
+
+
+.container {
+  width: 60%;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  background-image:url("image/slider_h3.jpg");
+   background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  padding: 0 30px;
+  position: relative;
+}
+
+
+
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 320px;
+}
+@media screen and (max-width: 930px) {
+  .left-side {
+    text-align: center;
+    max-width: 450px;
+  }
+}
+
+.mySwiper {
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main {
+  padding: 42px 0 30px;
+  display: flex;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main-title {
+  display: block;
+  background-color:rgb(9, 0, 0,0.7);
+  text-align: center;
+  color:white;
+  width: 110%;
+  margin-top: 23%;
+  padding: 1%;
+  font-size: 200%;
+  font-weight: 400;
+  transition-delay: 0.3s;
+}
+
+.main-content .more-menu svg {
+  width: 28px;
+  height: 18px;
+  margin-left: 10px;
+}
+
+
+.button-wrapper {
+  border-radius:10px;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+
+.button-wrapper svg {
+  width: 28px;
+}
+
+.button-wrapper .swiper-button {
+  border: 1px solid ;
+  border-radius: 50%;
+  background:rgba(5, 0, 6, 0.5);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.button-wrapper .swiper-button:hover {
+  background-color: #EA4C14;
+ 
+}
+.button-wrapper .swiper-button:hover svg {
+  stroke: #fff;
+}
+
+.button-wrapper .swiper-prev-button svg {
+  transform: rotate(-180deg);
+}
+
+
+.swiper-slide {
+  opacity: 0 !important;
+  transition: 0.4s;
+}
+.swiper-slide-active {
+  opacity: 1 !important;
+}
+
+.swiper-slide .main-wrapper > *,
+.swiper-slide .main-content > * {
+  transform: translateY(-30px);
+  opacity: 0;
+  transition-duration: 0.8s;
+}
+
+.swiper-slide-active .main-wrapper > *,
+.swiper-slide-active .main-content > * {
+  transform: rotate(90deg);;
+  opacity: 1;
+}
+
+
+[data-sld="1"] .container,
+[data-sld="1"] .header {
+  background-image:url("image/slider_h1.jpg") ;
+  background-size:cover;
+}
+
+[data-sld="2"] .container,
+[data-sld="2"] .header {
+  background-image:url("image/slider_h2.jpg");
+   background-size:cover;
+}
+
+[data-sld="3"] .container,
+[data-sld="3"] .header {
+   background-image:url("image/slider_h3.jpg");
+    background-size:cover;
+}
